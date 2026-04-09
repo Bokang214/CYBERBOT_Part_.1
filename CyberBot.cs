@@ -79,6 +79,16 @@ namespace CYBERBOT_Part_._1
                 userName = Console.ReadLine();
             }
         }
+
+        //==============
+        //Welcome
+        //==============
+
+        private void WelcomeUser()
+        {
+            TypeEffect($"\nHello, {userName}! Welcome to the Cybersecurity Awareness Bot.");
+            TypeEffect("I'm here to help you stay safe online\n");
+        }
     }
     }
 }
