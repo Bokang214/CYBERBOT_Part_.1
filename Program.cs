@@ -1,10 +1,12 @@
-﻿namespace CYBERBOT_Part_._1
+﻿namespace CyberBot_PART_1
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            CyberBot b = new CyberBot();
+            b.Start();
+
         }
     }
 }
