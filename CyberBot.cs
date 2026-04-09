@@ -42,5 +42,27 @@ namespace CYBERBOT_Part_._1
             Console.ResetColor();
 
         }
+
+        //================
+        // VOICE GREETING
+        //================
+
+        private void PlayVoiceGreeting()
+        {
+            try
+            {
+                string path = "welcome.wav"; // file in project folder
+                SoundPlayer player = new SoundPlayer(path);
+                player.Load();        // loads audio
+                player.PlaySync();    // plays before continuing
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("🔊 Voice greeting could not play.");
+                Console.WriteLine("Error: " + ex.Message);
+                Console.ResetColor();
+            }
+        }
     }
 }
