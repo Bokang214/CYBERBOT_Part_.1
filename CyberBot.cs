@@ -63,6 +63,7 @@ namespace CYBERBOT_Part_._1
                 Console.WriteLine("Error: " + ex.Message);
                 Console.ResetColor();
             }
+        }
 
             //================
             //GET USER NAME
@@ -198,6 +199,33 @@ namespace CYBERBOT_Part_._1
                 ShowError("I didn’t understand that question.");
             }
         }
+
+
+        //====================
+        // TYPING EFFECT
+        //====================
+
+        private void TypeEffect(string message)
+        {
+            foreach (char c in message)
+            {
+                Console.Write(c);
+                Thread.Sleep(15);
+            }
+            Console.WriteLine();
+
+        }
+
+        //=================
+        // DISPLAY ERROR
+        //=================
+
+        private void ShowError(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
     }
     }
-}
+
