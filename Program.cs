@@ -1,4 +1,6 @@
-﻿namespace CyberBot_PART_1
+﻿using CYBERBOT_Part_._1;
+
+namespace CyberBot_PART_._1
 {
     class Program
     {
